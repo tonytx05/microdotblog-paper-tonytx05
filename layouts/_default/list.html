@@ -12,6 +12,7 @@
     <h2>{{ .Title }}</h2>
   {{ end }}
   <time>{{ .Date | time.Format ":date_medium" }}</time>
+  <p>{{ .Summary | truncate 200 }}</p>
   <a href="{{ .Permalink }}"></a>
 </article>
 {{ end }}

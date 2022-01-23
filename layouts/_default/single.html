@@ -4,9 +4,16 @@
   <header class="post-title">
     <p>
       <time>{{ .Date | time.Format ":date_medium" }}</time>
-      {{ if or .Params.Author site.Author.name }}
-      <span>{{ .Params.Author | default site.Author.name }}</span>
-      {{ end }}
+      <!-- Start : Code for adding categories -->
+		{{ with .Params.categories  }}
+    {{ range . }}
+    {{ $name := . }}
+      {{ with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) }}
+      <span><a href="{{ .Permalink }}" class="p-category" >#{{ $name }}</a></span>
+      {{ end -}}
+    {{ end }}
+  {{ end }}
+<!-- End : Code for adding categories -->
     </p>
     <h1>{{ .Title }}</h1>
   </header>

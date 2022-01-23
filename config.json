@@ -2,6 +2,7 @@
     "params": {
 		"twitter": "YOUR_TWITTER_ID",
 		"github": "YOUR_GITHUB_ID",
-		"instagram": "YOUR_INSTAGRAM_ID"
+		"instagram": "YOUR_INSTAGRAM_ID",
+        "microdotblog": "YOUR_MICRODOTBLOG_ID"
 	}
 }

@@ -1,11 +1,11 @@
 <div align="center">
-<h1>Paper <sup><sup><sub>5.1</sub></sup></sup></h1>
+<h1>Paper <sup><sup><sub>5.1</sub></sup></sup></h1> for Micro.blog
 
 Demo → [hugo-paper.vercel.app](https://hugo-paper.vercel.app/)
 
 <hr />
 
-A simple, clean, flexible Hugo theme.
+A simple, clean, flexible Hugo theme. Ported to and customized for [Micro.blog](https://amitgawande.com).
 
 ⚡️ Fast | 🦋 Fluent | 🪀 Smooth
 
@@ -27,40 +27,23 @@ Hugo themes: [themes.gohugo.io/hugo-paper](https://themes.gohugo.io/hugo-paper/)
 
 ## Install
 
-Inside the folder of your Hugo project, run:
+Paper will soon be available as a full plugin on Micro.blog. Set the theme to `blank` in the design section of your blog. Make sure there are no other custom CSS configured for the previous theme. Then install the Paper theme from the plugin directory. Select Paper as *Custom Theme* in the design section and click "Update Blog Settings" at the bottom of the page.
 
-```bash
-git submodule add https://github.com/nanxiaobei/hugo-paper themes/paper
-```
+## Configure Social Icons in Header
 
-Open `config.toml`, change `theme` to `"paper"`:
+Available options in `config.json` to configure the social icons displayed in the header. Remove any item you don't 
 
-```toml
-theme = "paper"
-```
-
-For more information, please read the [official guide](https://gohugo.io/getting-started/quick-start/#step-3-add-a-theme) of Hugo.
-
-## Options
-
-Available options to `config.toml`:
-
-```toml
-disqusShortname = 'YOUR_DISQUS_SHORTNAME'   # add disqus comments
-
-[params]
-  disableHLJS = true                         # don't use highlight.js
-  twitter = 'YOUR_TWITTER_ID'                # twitter.com/YOUR_TWITTER_ID
-  github = 'YOUR_GITHUB_ID'                  # github.com/YOUR_GITHUB_ID
-  instagram = 'YOUR_INSTAGRAM_ID'            # instagram.com/YOUR_INSTAGRAM_ID
+```json
+{
+    "params": {
+		"twitter": "YOUR_TWITTER_ID",
+		"github": "YOUR_GITHUB_ID",
+		"instagram": "YOUR_INSTAGRAM_ID",
+    "microdotblog": "YOUR_MICRODOTBLOG_ID"
+	}
+}
 ```
 
 ## License
 
 [MIT License](https://github.com/nanxiaobei/hugo-paper/blob/master/LICENSE) (c) [nanxiaobei](https://lee.so/)
-
-## FUTAKE
-
-Try [**FUTAKE**](https://sotake.com/f) in WeChat. A mini app for your inspiration moments. 🌈
-
-![FUTAKE](https://s3.jpg.cm/2021/09/21/IFG3wi.png)

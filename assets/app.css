@@ -475,7 +475,7 @@ img {
   margin-inline: auto;
 }
 
-.post-content a, .main a {
+.post-content a, .h-entry a {
   padding-bottom: 0.2rem;
   font-weight: 500;
   border-bottom: 2px solid var(--pro);
