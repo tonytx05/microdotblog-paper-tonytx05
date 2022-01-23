@@ -1,8 +1,6 @@
 <div align="center">
 <h1>Paper <sup><sup><sub>5.1</sub></sup></sup> for Micro.blog</h1>
 
-Demo → [hugo-paper.vercel.app](https://hugo-paper.vercel.app/)
-
 <hr />
 
 A simple, clean, flexible Hugo theme. Ported to and customized for [Micro.blog](https://amitgawande.com).
@@ -13,17 +11,11 @@ A simple, clean, flexible Hugo theme. Ported to and customized for [Micro.blog](
 
 ---
 
-## Links
-
-Product Hunt: [producthunt.com/posts/hugo-paper](https://www.producthunt.com/posts/hugo-paper)
-
-Hugo themes: [themes.gohugo.io/hugo-paper](https://themes.gohugo.io/hugo-paper/)
-
 ## Overview
 
-![](https://raw.githubusercontent.com/nanxiaobei/hugo-paper/master/images/screenshot.png)
-![](https://raw.githubusercontent.com/nanxiaobei/hugo-paper/master/images/screenshot_dark.png)
-![](https://raw.githubusercontent.com/nanxiaobei/hugo-paper/master/images/screenshot_mobile.png)
+![](https://raw.githubusercontent.com/am1t/microdotblog-paper/master/images/screenshot.png)
+![](https://raw.githubusercontent.com/am1t/microdotblog-paper/master/images/screenshot_dark.png)
+![](https://raw.githubusercontent.com/am1t/microdotblog-paper/master/images/screenshot_mobile.png)
 
 ## Install
 
