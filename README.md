@@ -1,5 +1,5 @@
 <div align="center">
-<h1>Paper <sup><sup><sub>5.1</sub></sup></sup></h1> for Micro.blog
+<h1>Paper <sup><sup><sub>5.1</sub></sup></sup> for Micro.blog</h1>
 
 Demo → [hugo-paper.vercel.app](https://hugo-paper.vercel.app/)
 
@@ -39,11 +39,11 @@ Available options in `config.json` to configure the social icons displayed in th
 		"twitter": "YOUR_TWITTER_ID",
 		"github": "YOUR_GITHUB_ID",
 		"instagram": "YOUR_INSTAGRAM_ID",
-    "microdotblog": "YOUR_MICRODOTBLOG_ID"
+    	"microdotblog": "YOUR_MICRODOTBLOG_ID"
 	}
 }
 ```
 
 ## License
 
-[MIT License](https://github.com/nanxiaobei/hugo-paper/blob/master/LICENSE) (c) [nanxiaobei](https://lee.so/)
+[MIT License](https://github.com/nanxiaobei/hugo-paper/blob/master/LICENSE)
