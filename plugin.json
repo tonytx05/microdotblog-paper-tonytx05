@@ -1,5 +1,27 @@
 {
 	"version": "1.0.1",
 	"title": "Paper theme",
-	"description": "A simple, clean, flexible Hugo theme, customized for Micro.blog."
+	"description": "A simple, clean, flexible Hugo theme, customized for Micro.blog.",
+	"fields": [
+		{
+			"field": "params.twitter",
+			"label": "Twitter",
+			"placeholder": "Your Twitter username"
+		},
+		{
+			"field": "params.github",
+			"label": "GitHub",
+			"placeholder": "Your GitHub username"
+		},
+		{
+			"field": "params.instagram",
+			"label": "Instagram",
+			"placeholder": "Your Instagram username"
+		},
+		{
+			"field": "params.microdotblog",
+			"label": "Micro.blog",
+			"placeholder": "Your Micro.blog username"
+		}
+	]	
 }
