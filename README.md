@@ -19,22 +19,13 @@ A simple, clean, flexible Hugo theme. Ported to and customized for [Micro.blog](
 
 ## Installing the theme
 
-Paper will soon be available as a full plugin on Micro.blog. Set the theme to `blank` in the design section of your blog. Make sure there are no other custom CSS configured for the previous theme. Then install the Paper theme from the plugin directory. Once the theme is successfully installed, you can configure the social icons displayed in the header as described below.
+Paper is [available in Micro.blog's Plug-ins directory](https://micro.blog/account/plugins/view/43) and can directly be installed from there. Note that **the theme is compatible with Hugo 0.91** which is available as a setting on Micro.blog. You can follow the below general steps to install the theme. 
 
-## Configure Social Icons in Header
-
-Available options in `config.json` to configure the social icons displayed in the header. Remove any pramater that you don't want to be displayed in the header.
-
-```json
-{
-    "params": {
-		"twitter": "YOUR_TWITTER_ID",
-		"github": "YOUR_GITHUB_ID",
-		"instagram": "YOUR_INSTAGRAM_ID",
-		"microdotblog": "YOUR_MICRODOTBLOG_ID"
-	}
-}
-```
+- Uninstall any theme that you have installed as a plugin. 
+- Set you current theme to blank and Hugo Version to 0.91 in the design section of your blog. 
+- Make sure there are no other conflicting custom CSS configured for the previous theme. 
+- Install the "[Paper theme](https://micro.blog/account/plugins/view/43)" plug-in from the directory. 
+- Once the theme is successfully installed, you can configure the social icons displayed in the header by modifying the available options as plug-in's settings.
 
 ## License
 
