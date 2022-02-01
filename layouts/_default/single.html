@@ -24,15 +24,17 @@
   {{ end }}
 
   <!-- Post Reply Plugins -->
-  {{if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
-  <footer class="post-tags post-reply">
-    {{ if templates.Exists "partials/reply-by-email.html" }}
-  			{{ partial "reply-by-email.html" . }}
-		{{ end }}
-    {{ if templates.Exists "partials/conversation-link.html" }}
-  		{{ partial "conversation-link.html" . }}
-	  {{ end }}
-  </footer>
+  {{ if eq .Type "post"}}
+    {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") }}
+    <footer class="post-tags post-reply">
+      {{ if templates.Exists "partials/reply-by-email.html" }}
+          {{ partial "reply-by-email.html" . }}
+      {{ end }}
+      {{ if templates.Exists "partials/conversation-link.html" }}
+        {{ partial "conversation-link.html" . }}
+      {{ end }}
+    </footer>
+    {{ end }}
   {{ end }}
 
   <!-- Post Nav -->
