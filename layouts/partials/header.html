@@ -32,8 +32,12 @@
   {{ with site.Menus.main }}
   <nav class="menu">
     {{ range . }}
-    <a class="{{ if eq .URL $url }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-    {{ end }}
+			{{ if .Page.Params.redirect_url }}
+				<a class="{{ if eq .URL $url }}active{{ end }}" href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a>
+			{{ else }}
+				<a class="{{ if eq .URL $url }}active{{ end }}" role="presentation" href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a>
+			{{ end }}
+		{{ end }}
   </nav>
   {{ end }}<!---->
 

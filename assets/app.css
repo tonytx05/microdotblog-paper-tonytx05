@@ -380,6 +380,10 @@ img {
   margin-left: 0.5rem;
 }
 
+.post-tags.post-reply {
+  margin-top: 3,5rem;
+}
+
 .post-nav {
   display: flex;
   justify-content: space-between;
@@ -679,9 +683,8 @@ img {
   font-size: 16rem;
 }
 
-/* ==========================================================================
-   Webmentions Customizations
-   ========================================================================== */
+/* Webmentions Customizations
+ -------------------------------------------------- */
    .microblog_conversation {
     margin-top: 50px;
     padding-top: 20px;
@@ -726,3 +729,18 @@ img {
   .microblog_text p {
     margin-bottom: 5px;
   }
+
+  /* Catgegories on archive page
+ -------------------------------------------------- */
+.archive-categories {
+  padding-bottom: 15px; 
+  margin-bottom: 30px;
+	display: inline;
+}
+
+.archive-category-name {
+  margin: 0 10px 0 0;
+	color: inherit;
+	font-weight: 700;
+	text-decoration: underline;
+}
