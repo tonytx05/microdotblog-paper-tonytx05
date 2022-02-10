@@ -29,6 +29,11 @@ Paper is [available in Micro.blog's Plug-ins directory](https://micro.blog/accou
 
 ### Change Log
 
+**Version 1.0.4:** Released 10th February, 2022
+- Modified Archive Page template location [as per Micro.blog](https://micro.blog/manton/12448449) 
+- Fixed issue with plugin CSS and files not picked up
+- Fixed issue [with Custom CSS not working](https://micro.blog/Mtt/12470314)
+
 **Version 1.0.3:** Released 1st February, 2022
 - Added support to include categories on archive page
 - Added support for Reply by email and Conversations on M.b plugins
