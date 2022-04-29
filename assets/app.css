@@ -218,7 +218,7 @@ img {
 
 .menu {
   display: flex;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .menu a + a {
@@ -308,13 +308,13 @@ img {
 
 /* Post entry
  -------------------------------------------------- */
-.post-entry, .h-entry {
+ .post-entry-content, .post-entry, .h-entry {
   position: relative;
   padding-block: 2rem;
   transition: transform 0.1s;
 }
 
-.post-entry:first-of-type {
+.post-entry-content:first-of-type, .post-entry:first-of-type {
   margin-top: -2rem;
 }
 
@@ -322,12 +322,12 @@ img {
   transform: scale(0.99);
 }
 
-.post-entry h2 {
+.post-entry-content h2, .post-entry h2 {
   margin-bottom: 0.2rem;
   font-size: 3rem;
 }
 
-.post-entry time {
+.post-entry-content time, .post-entry time {
   flex-shrink: 0;
   font-size: 1.7rem;
   color: var(--air);
@@ -336,6 +336,16 @@ img {
 .post-entry a {
   position: absolute;
   inset: 0;
+}
+
+hr.post-separator {
+  text-align: center;
+  border: 0;
+}
+
+hr.post-separator:before {
+  content: "\2022 \2022 \2022 \2022";
+  font-size: 4rem;
 }
 
 /* Post single

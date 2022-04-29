@@ -26,8 +26,13 @@ Paper is [available in Micro.blog's Plug-ins directory](https://micro.blog/accou
 - Make sure there are no other conflicting custom CSS configured for the previous theme. 
 - Install the "[Paper theme](https://micro.blog/account/plugins/view/43)" plug-in from the directory. 
 - Once the theme is successfully installed, you can configure the social icons displayed in the header by modifying the available options as plug-in's settings.
+- Additionally, you can also configure parameter to display full post content on homepage or not to display categories on archive page.
 
 ### Change Log
+
+**Version 1.1:** Released 29th April, 2022
+- Added configuration to display full post content on homepage
+- Minor styling fixes for menu and post summary
 
 **Version 1.0.4:** Released 10th February, 2022
 - Modified Archive Page template location [as per Micro.blog](https://micro.blog/manton/12448449) 

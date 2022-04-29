@@ -1,5 +1,5 @@
 {
-	"version": "1.0.4",
+	"version": "1.1",
 	"title": "Paper theme",
 	"description": "A simple, clean, flexible Hugo theme, customized for Micro.blog.",
 	"fields": [
@@ -31,6 +31,11 @@
 		{
 			"field": "params.hide_categories_on_archive",
 			"label": "Hide category list on Archive page",
+			"type": "boolean"
+		},
+		{
+			"field": "params.full_content_on_homepage",
+			"label": "Display full post content on Homepage",
 			"type": "boolean"
 		}
 	]	

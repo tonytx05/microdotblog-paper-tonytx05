@@ -7,14 +7,25 @@
 
 <!-- Articles -->
 {{ $paginator := .Paginate $pages }} {{ range $index, $page := $paginator.Pages }}
-<article class="post-entry">
-  {{ if .Title }}
-    <h2>{{ .Title }}</h2>
+  {{ if .Site.Params.full_content_on_homepage }}
+    <article class="post-entry-content">
+      {{ if .Title }}
+        <h2>{{ .Title }}</h2>
+      {{ end }}
+      <time><a href="{{ .Permalink }}">{{ .Date | time.Format ":date_medium" }} ⌘</a></time>
+      <section class="post-content">{{ .Content }}</section>
+    </article>
+    <hr class="post-separator">
+  {{ else }}
+    <article class="post-entry">
+      {{ if .Title }}
+        <h2>{{ .Title }}</h2>
+      {{ end }}
+      <time>{{ .Date | time.Format ":date_medium" }}</time>
+      <p>{{ .Summary | truncate 300 }}</p>
+      <a href="{{ .Permalink }}"></a>
+    </article>
   {{ end }}
-  <time>{{ .Date | time.Format ":date_medium" }}</time>
-  <p>{{ .Summary | truncate 200 }}</p>
-  <a href="{{ .Permalink }}"></a>
-</article>
 {{ end }}
 
 <!-- Main Nav -->
