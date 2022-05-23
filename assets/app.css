@@ -370,7 +370,7 @@ hr.post-separator:before {
   transform: translateY(0.4rem);
 }
 
-a.post-date {
+a.post-date.u-url {
   border-bottom: none;
 }
 
