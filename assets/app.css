@@ -356,6 +356,10 @@ hr.post-separator:before {
   border-bottom: 1px solid var(--pro);
 }
 
+.archive-entry {
+  margin: 10px 0;
+}
+
 /* Post single
  -------------------------------------------------- */
 .post-title {
@@ -507,7 +511,7 @@ a.post-date.u-url {
   margin-inline: auto;
 }
 
-.post-content a {
+.post-content a, .archive-entry a {
   padding-bottom: 0.2rem;
   font-weight: 500;
   border-bottom: 2px solid var(--pro);

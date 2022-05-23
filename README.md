@@ -30,9 +30,10 @@ Paper is [available in Micro.blog's Plug-ins directory](https://micro.blog/accou
 
 ### Change Log
 
-**Version 1.1.2:** Released 23rd May, 2022
+**Version 1.1.3:** Released 23rd May, 2022
 - Fixed issue with On This Day feature not working
 - Minor fix for subscribe form 
+- Minor fixes for archive page
 
 **Version 1.1:** Released 29th April, 2022
 - Added configuration to display full post content on homepage
