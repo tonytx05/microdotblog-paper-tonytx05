@@ -1,18 +1,18 @@
 {{ define "main" }}
 
-<article class="post-single">
+<article class="h-entry post-single">
   <header class="post-title">
     {{if eq .Type "post" }}
     <p>
-      <time>{{ .Date | time.Format ":date_medium" }}</time>
+      <a class="u-url" href="{{ .Permalink }}"><time class="dt-published">{{ .Date | time.Format ":date_medium" }}</time></a>
       {{ if or .Params.Author site.Author.name }}
       <span>{{ .Params.Author | default site.Author.name }}</span>
       {{ end }}
     </p>
     {{ end }}
-    <h1>{{ .Title }}</h1>
+    <h1 class="p-name">{{ .Title }}</h1>
   </header>
-  <section class="post-content">{{ .Content }}</section>
+  <section class="e-content post-content">{{ .Content }}</section>
 
   <!-- Post Tags -->
   {{ if .Params.categories }}
