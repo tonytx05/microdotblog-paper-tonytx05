@@ -42,8 +42,9 @@
   {{ end }}
 
   <!-- Favicon -->
-  <link rel="icon" href="{{ `favicon.ico` | absURL }}" />
-  <link rel="apple-touch-icon" href="{{ `apple-touch-icon.png` | absURL }}" />
+  {{ $defaultPath := printf "/favicon.png" | printf "%s%s" $.Site.Author.username | printf "https://micro.blog/%s" | printf "%s" }}
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon | default $defaultPath }}" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ .Site.Params.favicon | default $defaultPath }}" type="image/x-icon" />
 
   <!-- Generator -->
   {{ hugo.Generator }}

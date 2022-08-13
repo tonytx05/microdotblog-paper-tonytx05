@@ -222,7 +222,7 @@ img {
 
 .menu {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .menu a + a {
