@@ -1,5 +1,5 @@
 {
-	"version": "1.1.4",
+	"version": "1.1.5",
 	"title": "Paper theme",
 	"description": "A simple, clean, flexible Hugo theme, customized for Micro.blog.",
 	"fields": [
@@ -22,6 +22,16 @@
 			"field": "params.microdotblog",
 			"label": "Micro.blog",
 			"placeholder": "Your Micro.blog username"
+		},
+		{
+			"field": "params.mastodon",
+			"label": "Mastodon",
+			"placeholder": "Your Mastodon profile url (including instance)"
+		},
+		{
+			"field": "params.linkedin",
+			"label": "LinkedIn",
+			"placeholder": "Your LinkedIn username"
 		},
 		{
 			"field": "params.buymeacoffee",

@@ -29,6 +29,8 @@
 
   {{ $url := .RelPermalink }}<!---->
   {{ $mb := "microdotblog" }}<!---->
+  {{ $lkd := "linkedin" }}<!---->
+  {{ $mstdn := "mastodon" }}<!---->
   {{ with site.Menus.main }}
   <nav class="menu">
     {{ range . }}
@@ -49,7 +51,11 @@
       <a
         class="{{ . }}"
         style="--url: url(./{{ . }}.svg)"
-        href="https://{{ if eq . $mb }}micro.blog{{else}}{{ . }}.com{{end}}/{{ $social_value }}"
+        {{if eq . $mstdn }}
+          href="{{ $social_value }}"
+        {{ else }}
+          href="https://{{ if eq . $mb }}micro.blog{{else}}{{ . }}.com{{ if eq . $lkd }}/in{{end}}{{end}}/{{ $social_value }}"
+        {{ end }}
         target="_blank"
       ></a>
       {{ end }}
