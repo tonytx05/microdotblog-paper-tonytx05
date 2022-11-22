@@ -49,6 +49,7 @@
     {{ $social_value := site.Params.Get . }}
       {{if ne $social_value "" }}
       <a
+        rel="me"
         class="{{ . }}"
         style="--url: url(./{{ . }}.svg)"
         {{if eq . $mstdn }}

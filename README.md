@@ -30,8 +30,8 @@ Paper is [available in Micro.blog's Plug-ins directory](https://micro.blog/accou
 
 ### Change Log
 
-**Version 1.1.5:** Released 19th November, 2022
-- Added support for mastodon and linkedin social icons
+**Version 1.1.6:** Released 22th November, 2022
+- Added support for mastodon and linkedin social icons, as `rel="me"` links.
 
 **Version 1.1.3:** Released 23rd May, 2022
 - Fixed issue with On This Day feature not working
